@@ -1,0 +1,87 @@
+.form_container{
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.form_container input[type='submit']{
+    border-radius: 8px;
+    background-color: #25b456;
+    color: #fff;
+    border: none;
+    min-width: 100px;
+    min-height: 2.5em;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.form_container input[type='submit']:hover{
+
+    background-color: #1c8a42;
+}
+
+.form_container p{
+    margin-top: 1em;
+}
+
+.form_container a{
+    color: #16479d;
+    font-weight: bold;
+}
+
+.form_container select{
+  
+        appearance: none; /* Remove a aparência padrão do select */
+        padding: .7em; /* Adicione um espaçamento interno para melhor legibilidade */
+        border: 1px solid #ccc; /* Adicione uma borda */
+        border-radius: 8px; /* Adicione bordas arredondadas */
+        background-color: #fff; /* Defina a cor de fundo */
+        font-size: 1.1em;
+    font-weight: bold; /* Defina o tamanho da fonte */
+        min-width: 100px;
+        min-height: 2.5em;
+        width: 100%;
+
+          
+}
+
+.form_container select,option {
+    color: #7b7b;
+    padding: .7em;
+    border:  1px solid #777;
+    border-radius: 5px;
+} 
+
+
+.form_container:focus {
+    outline: none; /* Remova o contorno ao receber foco */
+    border-color:  #777; /* Mude a cor da borda quando o select receber foco */
+  }
+
+
+
+
+  .form_containerlabel{
+    margin-bottom: .3em;
+    font-weight: bold;
+    font-size: .8em;
+
+}
+
+.form_container input{
+    padding: .7em;
+    border:  1px solid #777;
+    border-radius: 5px;
+
+
+}
+
+.form_container input::placeholder{
+    color: #7b7b;
+    
+
+}

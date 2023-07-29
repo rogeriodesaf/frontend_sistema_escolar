@@ -1,0 +1,112 @@
+/* RegistrarAula.module.css */
+
+.formContainer {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+
+.formTitle {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.formField {
+  margin-bottom: 30px;
+}
+
+.formLabel {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.formTextarea,
+.formInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.presencaContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.presencaItem {
+  flex: 0 0 50%;
+}
+
+.alunoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  margin-left: 5px;
+}
+.presencaItem {
+  margin-bottom: 10px;
+}
+
+.presencaButtonContainer {
+  display: flex;
+  align-items: center;
+}
+
+.presencaButtonContainer label {
+  margin-right: 10px;
+}
+
+.formSubmit {
+  text-align: center;
+}
+
+.formButton {
+  margin-top: 0.5em;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.formButton:hover {
+  background-color: #0056b3;
+}
+
+.presencaItem {
+  margin-bottom: 10px;
+}
+
+.nomeAluno {
+  font-weight: bold;
+  color: #333;
+}
+
+.presencaButtonContainer {
+  display: flex;
+  align-items: center;
+}
+
+.presencaButtonContainer label {
+  margin-right: 10px;
+}
+
+
+.checkbox {
+  margin-right: 5px;
+  
+}
