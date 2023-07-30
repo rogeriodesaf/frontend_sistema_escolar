@@ -1,6 +1,6 @@
 import { useState, useContext } from 'react';
 import React from 'react';
-import api from '../../utils/api';
+
 import formStyles from './Form.module.css';
 import useFlashMessage from '../../hooks/useFlashMessage';
 
@@ -12,7 +12,7 @@ import Input from './Input';
 
 // Componente
 function DisciplineForm({ btnText }) {
-  const [token] = useState(localStorage.getItem('token') || '')
+  
  
  
   const history = useHistory();
@@ -33,28 +33,11 @@ function DisciplineForm({ btnText }) {
   const submit = async (e) => {
     e.preventDefault();
 
-    if (!authenticated) {
-      setFlashMessage('Você precisa estar autenticado para cadastrar uma disciplina');
-      return;
-    }
+   
     let msgText = 'Cadastro realizado com sucesso!';
     let msgType = 'sucess';
   
-    {/*const response  = await api.post('/api/disciplinas', discipline, {
-        headers: {
-          Authorization: `Bearer ${JSON.parse(token)}`,
-          
-        },
-      })
-      .then((response) => {
-        console.log(response.data)
-        return response.data
-      })
-      .catch((err) => {
-        console.log(err)
-        msgType = 'error'
-        return err.response.data
-      })*/}
+   
       setFlashMessage(msgText, msgType);
     history.push('/home-coordenador')
   };
