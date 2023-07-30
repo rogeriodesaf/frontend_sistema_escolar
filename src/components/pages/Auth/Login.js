@@ -1,6 +1,6 @@
 
 import React, { useContext, useState } from 'react';
-import axios from 'axios';
+
 import Input from '../../forms/Input'
 import styles from '../../forms/Form.module.css'
 import { Link } from 'react-router-dom'
@@ -10,7 +10,7 @@ import { Context } from '../../../context/UserContext';
 
 function Login() {
 
-  const [loading, setLoading] = useState(false);
+  const [setLoading] = useState(false);
 
   const [userType, setUserType] = useState(''); // Estado para armazenar o tipo de usuário
   const [user, setUser] = useState({})

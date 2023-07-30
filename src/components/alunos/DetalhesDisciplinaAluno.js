@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import {  useParams } from 'react-router-dom';
 import React from 'react'
 
 import NotasAlunoDisciplina from './NotasAlunoDisciplina'
@@ -8,8 +8,8 @@ import styles from './NotasAlunosDisciplina.module.css'
 
 const DetalhesDisciplinaAluno = () => {
   const { alunoId, disciplinaId } = useParams();
-  const [presencas, setPresencas] = useState([]);
-  const [faltas, setFaltas] = useState([]);
+  const [ setPresencas] = useState([]);
+  const [ setFaltas] = useState([]);
   
   const [contadorPresencas, setContadorPresencas] = useState(0);
   const [contadorFaltas, setContadorFaltas] = useState(0);

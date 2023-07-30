@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+
 import moment from 'moment';
 import useFlashMessage from '../../hooks/useFlashMessage';
-import bus from '../../utils/bus';
+
 
 import styles from './RegistrarAula.module.css';
 
 function RegistrarAula({ disciplinaId }) {
-  const [aulaRegistrada, setAulaRegistrada] = useState(false);
+  const [ setAulaRegistrada] = useState(false);
 
   const [presencasAluno, setPresencasAluno] = useState([]);
 

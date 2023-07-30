@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styles from './PaginaProfessor.module.css';
 import jwtDecode from 'jwt-decode';
 
 const PaginaProfessores = () => {
-  const history = useHistory();
+
   const [token] = useState(localStorage.getItem('token') || '');
   const [professorInfo, setProfessorInfo] = useState({});
 

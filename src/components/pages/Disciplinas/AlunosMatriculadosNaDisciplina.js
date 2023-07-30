@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import RegistrarAula from '../../professores/RegistrarAula'
-import useFlashMessage from '../../../hooks/useFlashMessage';
+
 import { Link } from 'react-router-dom'
 import LancarNotas from '../../professores/LancarNotas'
 import MediaAlunos from '../../professores/MediaAlunos'
@@ -15,7 +15,7 @@ const AlunosMatriculados = () => {
   const [mostrarH1, setMostrarH1] = useState(true)
   const [mostrarFormulario, setMostrarFormulario] = useState(false);
   const [mostrarLista, setMostrarLista] = useState(true);
-  const { setFlashMessage } = useFlashMessage();
+
   const { disciplinaId } = useParams();
   const { alunoId } = useParams();
   const [alunos, setAlunos] = useState([]);

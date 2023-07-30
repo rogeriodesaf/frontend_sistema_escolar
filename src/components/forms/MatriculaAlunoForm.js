@@ -5,12 +5,10 @@ import formStyles from './Form.module.css';
 import { useHistory } from 'react-router-dom';
 import { Context } from '../../context/UserContext';
 import useFlashMessage from '../../hooks/useFlashMessage';
-import Select from './Select';
+
 import styles from './Inputs.module.css'
 import selectStyles from './Select.module.css'
 
-import Input from './Input';
-import axios from 'axios';
 
 function AlunoDisciplinaForm() {
 
@@ -30,10 +28,7 @@ function AlunoDisciplinaForm() {
  
   const { authenticated } = useContext(Context);
 
-  const [dados, setDados] = useState({
-    disciplinaId: '',
-    alunoId: ''
-  });
+
 
   const history = useHistory();
 

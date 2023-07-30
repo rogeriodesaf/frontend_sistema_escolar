@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import jwtDecode from 'jwt-decode';
 import api from '../../utils/api';
-import useFlashMessage from '../../hooks/useFlashMessage'
+
 import { Link } from 'react-router-dom';
 
 
@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 function ProfessorDisciplinas() {
   const [disciplinas, setDisciplinas] = useState([]);
   const [token] = useState(localStorage.getItem('token') || '')
-  const { setFlashMessage } = useFlashMessage()
+  
 
   useEffect(() => {
     // Obtém o token armazenado no LocalStorage

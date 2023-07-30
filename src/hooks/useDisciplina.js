@@ -99,7 +99,7 @@ export default function useDisciplina(){
         let msgType = 'sucess'
 
         
-        let data;
+       
 
         try {
            

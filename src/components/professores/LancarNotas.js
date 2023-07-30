@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import useFlashMessage from '../../hooks/useFlashMessage'
-import Input from '../forms/Input'
+
 import styles from '../forms/Form.module.css'
 import stylesButton from '../professores/RegistrarAula.module.css';
 import { useHistory } from 'react-router-dom';
@@ -11,8 +11,8 @@ import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 const LancarNotas = () => {
  
-  const [alunoId, setAlunoId] = useState('');
-  const [nota, setNota] = useState('');
+  const [ setAlunoId] = useState('');
+  const [nota] = useState('');
   const { disciplinaId } = useParams();
   const [alunos, setAlunos] = useState([]);
   const [notas, setNotas] = useState({});

@@ -74,7 +74,7 @@ export default function useAuth() {
     let msgText = 'Login realizado com sucesso!';
     let msgType = 'sucess';
 
-    let data;
+
 
     try {
       if (userType === 'aluno') {

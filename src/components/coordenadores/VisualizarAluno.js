@@ -35,7 +35,7 @@ const VisualizarAlunos = () => {
     // Quando clicar no link "Ver Histórico", definimos o aluno selecionado pelo ID
     
     history.push(`/historico/${alunoId}`);
-   /// setAlunoSelecionado(alunoId); // Atualiza o estado com o ID do aluno selecionado
+    setAlunoSelecionado(alunoId); // Atualiza o estado com o ID do aluno selecionado
   };
 
   const handlePageChange = ({ selected }) => {

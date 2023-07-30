@@ -30,7 +30,6 @@ import AlunoDisciplinaForm from './components/forms/MatriculaAlunoForm';
 import DisciplinasDoProfessor from './components/professores/DisciplinasDoProfessor';
 import AlunosMatriculados from './components/pages/Disciplinas/AlunosMatriculadosNaDisciplina';
 
-import RegistrarAula from './components/professores/RegistrarAula';
 import PresencasFaltas from '../src/components/alunos/PresencasFaltas'
 
 import LancarNotas from './components/professores/LancarNotas'

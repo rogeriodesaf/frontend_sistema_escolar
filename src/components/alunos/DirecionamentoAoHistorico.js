@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import jwtDecode from 'jwt-decode';
-import useFlashMessage from '../../hooks/useFlashMessage';
+
 import HistoricoAluno from './HistoricoAluno';
 
 function DirecionamentoHistorico() {
   const [alunoId, setAlunoId] = useState(null);
-  const { setFlashMessage } = useFlashMessage();
+
 
   useEffect(() => {
     // Função para buscar o alunoId do token do usuário
