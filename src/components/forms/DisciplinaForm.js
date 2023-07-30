@@ -14,7 +14,7 @@ import Input from './Input';
 function DisciplineForm({ btnText }) {
   const [token] = useState(localStorage.getItem('token') || '')
  
-  
+ 
   const history = useHistory();
   const { setFlashMessage } = useFlashMessage();
   const { authenticated } = useContext(Context);
@@ -40,10 +40,10 @@ function DisciplineForm({ btnText }) {
     let msgText = 'Cadastro realizado com sucesso!';
     let msgType = 'sucess';
   
-    const data  = await api.post('/api/disciplinas', discipline, {
+    {/*const response  = await api.post('/api/disciplinas', discipline, {
         headers: {
           Authorization: `Bearer ${JSON.parse(token)}`,
-      
+          
         },
       })
       .then((response) => {
@@ -54,7 +54,7 @@ function DisciplineForm({ btnText }) {
         console.log(err)
         msgType = 'error'
         return err.response.data
-      })
+      })*/}
       setFlashMessage(msgText, msgType);
     history.push('/home-coordenador')
   };
