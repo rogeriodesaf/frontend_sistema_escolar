@@ -1,11 +1,10 @@
-import { useState, useContext } from 'react';
+import { useState} from 'react';
 import React from 'react';
 
 import formStyles from './Form.module.css';
 import useFlashMessage from '../../hooks/useFlashMessage';
 
 import { useHistory } from 'react-router-dom';
-import { Context } from '../../context/UserContext';
 
 
 import Input from './Input';
@@ -17,7 +16,7 @@ function DisciplineForm({ btnText }) {
  
   const history = useHistory();
   const { setFlashMessage } = useFlashMessage();
-  const { authenticated } = useContext(Context);
+  
 
   const [discipline, setDiscipline] = useState({
     nome: '',
